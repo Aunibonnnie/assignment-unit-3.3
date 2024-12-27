@@ -108,8 +108,16 @@ console.log( totalParts );
 //    how many boxes were filled.
 console.log('9. Filling boxes with a "while" loop');
 
+let parts = 572;
+let boxesFilled = 0;
+let sumOfParts = 7;
 
+while( parts >= sumOfParts ) {
+  boxesFilled++;
+  parts -= sumOfParts;
+}
 
+console.log( boxesFilled );
 
 // DO NOT MODIFY
 // Used for automated testing
