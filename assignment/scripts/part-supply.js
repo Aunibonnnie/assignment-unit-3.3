@@ -78,15 +78,21 @@ for (let number of supplyChanges) {
   }
 }
 console.log(supplyChanges);
-console.log(stretchPositives);
-console.log(stretchNegatives);
+console.log(stretchPositives.length++ );
+console.log(stretchNegatives );
 console.log(stretchZeroes);
 
 
 // 8. Create a variable called 'totalParts' and assign it a value of 0.
 //    Then, write a loop that adds each value of the 'supplyChanges'
 //    array to the 'totalParts' variable.
-console.log('8. Looping through supplyChanges to calculate the sum:');
+// console.log('8. Looping through supplyChanges to calculate the sum:');
+let totalParts = 0;
+
+for( i=0; i<supplyChanges.length; i++ ){
+  totalParts += supplyChanges[i];
+}
+console.log( totalParts );
 
 
 // 9. We have a large stash of parts in our warehouse that we 
